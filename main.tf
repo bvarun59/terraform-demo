@@ -1,9 +1,9 @@
-provider var.provider {
-    region = "us-east-1"
+provider "aws" {
+  region = var.region
 }
 
 resource "aws_s3_bucket" "demos3" {
-  bucket = "thisismytestbucketterraform"
+  bucket = var.bucket_name
 
   tags = {
     Name        = "terraformbucket "
