@@ -3,6 +3,6 @@ variable "region" {
   type    = string
 }
 variable "bucket_name" {
-  default = "thisismytestbucketterraform"
+  default = "thisismytestbucketterraformv1"
   type    = string
 }
